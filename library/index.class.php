@@ -16,7 +16,7 @@ class Page
 		$this->_columns = array();
 			}
 	public function append($column) {
-		$this->columns[] = $column;
+		$this->_columns[] = $column;
 	}
 	
 	public function render() {
