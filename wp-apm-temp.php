@@ -1,5 +1,5 @@
 <?php 
-class Tribe_Status_Type {
+class apmAdType {
 
     protected $key = 'tribe_post_status';
     protected $type = 'post_status';
@@ -58,5 +58,5 @@ class Tribe_Status_Type {
     }
 
 }
-new Tribe_Status_Type;
+new apmAdType;
 ?>
