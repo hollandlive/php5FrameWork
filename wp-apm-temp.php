@@ -7,11 +7,11 @@ class Tribe_Status_Type {
     public function __construct() {
         $type = $this->type;
 
-        add_filter( 'tribe_custom_column'.$type, array($this, 'column_value'), 10, 3 );
-        add_filter( 'tribe_custom_row'.$type, array($this, 'form_row'), 10, 4 );
-        add_filter( 'tribe_maybe_active'.$type, array($this, 'maybe_set_active'), 10, 3 );
-        add_action( 'tribe_after_parse_query', array($this, 'parse_query'), 10, 2 );
-        add_action( 'tribe_orderby_custom'.$type, array($this, 'orderby'), 10, 2 );
+        add_filter('tribe_custom_column'.$type, array($this, 'column_value'), 10, 3 );
+        add_filter('tribe_custom_row'.$type, array($this, 'form_row'), 10, 4 );
+        add_filter('tribe_maybe_active'.$type, array($this, 'maybe_set_active'), 10, 3 );
+        add_action('tribe_after_parse_query', array($this, 'parse_query'), 10, 2 );
+        add_action('tribe_orderby_custom'.$type, array($this, 'orderby'), 10, 2 );
     }
 
     public function orderby($wp_query, $filter) {
