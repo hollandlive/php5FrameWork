@@ -1,4 +1,10 @@
 <?php 
+
+/** Ik kijk over deze twee plagins, APM en WP UF dit weekend nog
+ */
+
+
+
 class apmAdType {
 
     protected $key = 'tribe_post_status';
