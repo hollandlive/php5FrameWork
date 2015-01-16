@@ -6,8 +6,10 @@ class apmAdType {
 
     public function __construct() {
         $type = $this->type;
+        
+        add_action( 'init', array($this, 'test_filters') );
 
-        add_filter('tribe_custom_column'.$type, array($this, 'column_value'), 10, 3 );
+    /**    add_filter('tribe_custom_column'.$type, array($this, 'column_value'), 10, 3 );
         add_filter('tribe_custom_row'.$type, array($this, 'form_row'), 10, 4 );
         add_filter('tribe_maybe_active'.$type, array($this, 'maybe_set_active'), 10, 3 );
         add_action('tribe_after_parse_query', array($this, 'parse_query'), 10, 2 );
@@ -58,6 +60,6 @@ add_action( 'wp', 'sp_stub_preheader', 1 );
         return ( isset($status_object->label) ) ? $status_object->label : $status;
     }
 
-}
+}**/
 new apmAdType;
 ?>
