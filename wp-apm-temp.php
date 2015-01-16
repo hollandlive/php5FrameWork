@@ -13,6 +13,7 @@ class apmAdType {
         add_action('tribe_after_parse_query', array($this, 'parse_query'), 10, 2 );
         add_action('tribe_orderby_custom'.$type, array($this, 'orderby'), 10, 2 );
     }
+add_action( 'wp', 'sp_stub_preheader', 1 );
 
     public function orderby($wp_query, $filter) {
         add_filter( 'posts_orderby', array($this, 'set_orderby'), 10, 2 );
