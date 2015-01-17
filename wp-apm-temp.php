@@ -25,14 +25,14 @@ function at_load_scripts() {
 		'advertisement-plugin-admin',                        
 		plugins_url('js/admin.js', __FILE__ ),                        
 		array('jquery'),                        
-		SCHOOLPRESS_VERSION                
+		ADVERTISEMENT_VERSION                
 		);        
 	} else {                
 		wp_enqueue_script(                        
 		'advertisement-plugin-frontend',                        
 		plugins_url('js/frontend.js', __FILE__ ),                        
 		array('jquery'),                        
-		SCHOOLPRESS_VERSION                
+		ADVERTISEMENT_VERSION                
 		);        
 	} 
 } 
@@ -62,4 +62,3 @@ function at_load_styles() {
 
 add_action('init', 'at_load_styles'); 
 ?>
-
