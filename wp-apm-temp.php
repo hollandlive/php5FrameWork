@@ -12,7 +12,7 @@
  ** License: GPLv2 */
 		
 function at_wp_footer($variableA) {
-			$variableA = "I am still working on two plugins: APM and WP UF";
+			$variableA = "I didn't have much time to work on these plugins so I have offered another possible solution";
 			echo $variableA;
 	}
 add_action ('wp_footer', 'at_wp_footer');
